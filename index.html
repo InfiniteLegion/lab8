@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+
+    <!-- Connect JQuery -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- Connect JQueryUI -->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+    <!-- Connect Style -->
+    <link rel="stylesheet" href="https://snipp.ru/cdn/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://resources/demos/style.css">
+
+    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://snipp.ru/cdn/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <!--For Fotorama-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <script>
+        $(function () {
+            var handle = $("#custom-handle");
+            $("#slider").slider({
+                create: function () {
+                    handle.text($(this).slider("value"));
+                },
+                slide: function (event, ui) {
+                    handle.text(ui.value);
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $("#console").selectmenu();
+
+            $("#files").selectmenu();
+
+            $("#number")
+                .selectmenu()
+                .selectmenu("menuWidget")
+                .addClass("overflow");
+        });
+    </script>
+
+    <title>Lab 8</title>
+</head>
+
+<body>
+    <div class="wrapper container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./Assets/img/logo.png" alt="logo" height="90">
+                </a>
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="./Pages/login.html" class="nav-link text-dark">Вхід</a>
+            </div>
+        </nav>
+
+        <main class="main">
+            <h2>Lorem 1</h2>
+            <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea accusamus neque aut assumenda, veritatis obcaecati quos ad facere sed porro nobis repellat laboriosam nesciunt exercitationem saepe minus? At explicabo in libero aperiam dolor, facilis ab atque, ex quod eos magni hic rerum, odio natus cupiditate minus vel provident perspiciatis voluptas aspernatur eius consectetur commodi perferendis architecto. Quasi omnis tempora aspernatur nobis facere, nihil non nesciunt perspiciatis ex, consectetur ullam autem, natus dignissimos at vel perferendis fugiat et! Qui similique suscipit beatae debitis ipsum voluptatem veritatis placeat deleniti quaerat architecto necessitatibus iure ut perspiciatis explicabo, soluta consectetur neque quas consequuntur dolorem officiis, rerum aspernatur. Nisi quaerat optio praesentium veritatis, nobis cupiditate iure reprehenderit iusto, quo hic quasi, libero quos dolorem. Veritatis tempora minima dolore unde iure incidunt, impedit corporis nostrum ea, alias beatae rem asperiores repudiandae, aut fugiat natus! Blanditiis sunt dignissimos deleniti minima non dolores beatae omnis, explicabo nihil vel.</p>
+            <h2>Lorem 2</h2>
+            <p class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda voluptates veritatis esse et obcaecati quae illo temporibus corporis eligendi eaque doloribus dolore officiis, similique, pariatur eos repellat molestias magnam distinctio architecto suscipit odit amet, veniam ea reprehenderit. Quis culpa mollitia nisi esse nam blanditiis soluta sit nihil tempore laborum dignissimos perferendis architecto inventore obcaecati dolore doloremque vitae sint a illum, fugit molestias neque harum eos? Odit excepturi id libero, optio officia nostrum ullam! Quam et aliquam facere, voluptatibus reprehenderit molestias eligendi praesentium expedita veniam eos, excepturi illum laudantium? Voluptatum, vel illum eos dignissimos explicabo facere nobis consectetur ducimus optio amet.</p>
+            <h2>Lorem 3</h2>
+            <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur pariatur officiis autem! Illo eius, dignissimos similique molestias repudiandae ratione hic natus. Eligendi, aliquam. Fugit adipisci officiis nisi, ab ipsum incidunt quas maiores sed dicta nam enim, nostrum minima saepe commodi ullam officia accusamus deleniti porro hic eligendi veritatis similique quos nemo? Fugiat sunt veritatis culpa! Quod vitae dolor temporibus? Similique quae exercitationem quidem fugiat at! Voluptates ex omnis, animi perspiciatis recusandae error voluptate. Totam beatae deserunt magnam similique. Distinctio sint vero sapiente perspiciatis illum natus voluptatibus voluptas quod ipsa illo atque suscipit ex velit veritatis, quos exercitationem tempore quidem incidunt qui expedita culpa mollitia iure consequuntur! Assumenda minima dolores id ducimus, sit alias ea dignissimos optio laborum veniam, cupiditate maxime animi doloribus ex vel cumque! Id architecto hic et! Natus labore laboriosam nesciunt. Odit, nemo quidem. Sit, praesentium minima. Rerum, quasi? Quae doloremque voluptatem fugiat eligendi labore ab. Iste mollitia incidunt velit est magni iure. Eius temporibus, maiores ullam optio voluptatem ratione laboriosam delectus itaque nesciunt libero quia nisi, natus et accusantium autem in quis non. Placeat unde, quisquam voluptatem pariatur expedita minima, rem incidunt omnis voluptate optio corrupti iste illum, eveniet aspernatur nihil molestias error voluptatibus! In, molestiae non! Consequuntur incidunt in, praesentium quidem rem repudiandae eaque numquam, cumque qui atque quasi. Ea quo illum sapiente odit! Natus amet, obcaecati quidem ex sint ut! At consequuntur possimus, velit ullam esse quae incidunt nisi! Id dignissimos, consequuntur suscipit eaque itaque perspiciatis esse veniam eveniet non natus sapiente saepe quas cupiditate?</p>
+
+            <!-- Google map -->
+            <div class="container-fluid">                
+                <h2>Контейнер з Google картою</h2>
+                <div class="d-flex justify-content-around pb-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d917.1987508101554!2d32.06223243103553!3d49.442373091103576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14b7e806fe79d%3A0x8962970b2d9c1d7d!2sCherkas%CA%B9kyy%20Akademichnyy%20Oblasnyy%20Ukrayins%CA%B9kyy%20Muzychno-Dramatychnyy%20Teatr%20Imeni%20T.%20H.%20Shevchenka!5e0!3m2!1sru!2sua!4v1686826550106!5m2!1sru!2sua" width="1600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!-- YouTube -->
+            <div class="container-fluid">
+                <h2>Відео з YouTube</h2>
+                <div class="d-flex justify-content-around pb-5">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bWNmJqgri4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Audio -->
+            <div class="container-fluid">
+                <h2>Контейнер з аудіо</h2>
+                <div class="d-flex justify-content-around pb-5">
+                    <audio src="./Assets/audio/Free flow flava - Final round.mp3" controls muted></audio>
+                </div>
+            </div>
+
+            <!-- Weather -->
+            <div class="container-fluid">
+                <h2>Віджет погоди</h2>
+                <div class="d-flex justify-content-around pb-5">
+                    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+                    <div class="elfsight-app-fb3e1f5a-d7d6-43af-85f9-dfab4fd8684b"></div>
+                </div>
+            </div>
+
+            <div id="newFont" class="container-fluid">
+                <h2>Контейнер з підключеним шрифтом</h2>
+                <p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem beatae doloribus illo! Itaque laudantium iure doloribus sint sapiente delectus quisquam ut consequuntur explicabo libero quasi reiciendis, est veniam aut exercitationem, recusandae minima vel nostrum soluta atque in voluptatem optio dolorum esse! Illum facere reprehenderit debitis culpa rem provident reiciendis iure dolore quam dolorem unde earum ullam assumenda, saepe perspiciatis repellendus praesentium. Blanditiis unde ab quaerat beatae qui ut quam possimus placeat itaque non voluptate aliquid minima harum fugit magnam quae, dolor exercitationem iure hic inventore laboriosam adipisci tempora deleniti. Laboriosam, iure blanditiis, cupiditate, dignissimos quis nam aliquid necessitatibus magnam voluptatum sint libero maxime nemo eveniet officia labore aspernatur natus possimus! Nemo voluptas magni temporibus repudiandae reiciendis? Natus libero nisi officiis tempore animi sit voluptate magni veritatis ad autem ipsum unde, nostrum necessitatibus? Cupiditate velit eius quae magni, dolorem eveniet vero cumque tenetur nesciunt reiciendis, officia numquam dignissimos quidem qui? Tempore rem necessitatibus vero alias facilis ad aliquam obcaecati repellat minus ratione fuga explicabo, corporis fugiat cupiditate quod similique quibusdam cum ducimus id consequatur perspiciatis officia temporibus? Voluptas obcaecati adipisci consequuntur, eaque debitis veritatis accusantium itaque corporis accusamus iure rerum quibusdam voluptate, facere cupiditate? Sit molestias eveniet voluptas fuga? Cupiditate, odit!</p>
+            </div>
+
+            <!-- Slider -->
+            <div class="container-fluid pb-5 d-flex flex-column justify-content-around">
+                <h2>Слайдер</h2>
+                <div id="slider" class="w-50">
+                    <div id="custom-handle" class="ui-slider-handle"></div>
+                </div>
+            </div>
+
+            <!-- Select -->
+            <div class="container-fluid pb-5 d-flex flex-column justify-content-around">
+                <h2>Селектор</h2>
+                <form action="#">
+                    <fieldset>
+                        <p>Виберіть консоль</p>
+                        <select name="console" id="console">
+                            <option value="playstation" selected>PlayStation 5</option>
+                            <option value="xbox">Xbox Series X</option>
+                            <option value="nintendo">Nintendo Switch</option>
+                        </select>
+                    </fieldset>
+                </form>
+            </div>
+
+            <!-- Gallery -->
+            <div class="container-fluid pb-5 d-flex flex-column justify-content-around">
+                <h2>Слайдер зображень</h2>
+                <div class="fotorama">
+                    <img src="https://i.insider.com/5ee3c9cd5af6cc25df6b92b4?width=1000&format=jpeg&auto=webp" alt="">
+                    <img src="https://i0.wp.com/news.xbox.com/ru-ru/wp-content/uploads/sites/9/2020/09/XSX_XSS_Design_HERO.jpg?resize=1200%2C675&ssl=1" alt="">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Nintendo-Switch-Console-Docked-wJoyConRB.jpg" alt="">
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer text-light bg-dark">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <p>+38099-123-45-67</p>
+                        <p>info@gmail.com</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <p>&copy; test-page copyright</p>
+                    </div>
+                    <div id="socials" class="col-md-4 col-sm-12">
+                        <div class="d-flex flex-column justify-content-around">
+                            <h4 class="pb-2">Socials</h4>
+                            <div class="pb-3">
+                                <a id="facebookLink" href="https://facebook.com" target="_blank">
+                                    <i id="facebookIcon" class="bi bi-facebook"></i> Facebook
+                                </a>
+                            </div>
+                            <div class="pb-3">
+                                <a id="telegramLink" href="https://web.telegram.org/a/" target="_blank">
+                                    <i id="telegramIcon" class="bi bi-telegram"></i> Telegram
+                                </a>
+                            </div>
+                            <div class="pb-3">
+                                <a id="instagramLink" href="https://instagram.com" target="_blank">
+                                    <i id="instagramIcon" class="bi bi-instagram"></i> Instagram
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

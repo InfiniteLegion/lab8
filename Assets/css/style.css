@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Pacifico-Regular';
+    src: url('./Pacifico-Regular.ttf');
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* body content */
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.lorem {
+    padding: 0 10%;
+    font-size: 16pt;
+}
+
+#newFont {
+    font-family: 'Pacifico-Regular';
+}
+
+#console {
+    min-width: 300px;
+}
+
+/* body content ends */
+
+/* footer */
+
+.footer {
+    min-height: 50px;
+    padding: 10px;
+}
+
+#socials a {
+    text-decoration: none;
+    font-style: normal;
+    cursor: pointer;
+    color: white;
+}
+
+#socials i {
+    color: gray;
+}
+
+#facebookLink:hover {
+    #facebookIcon {
+        color: #3B5998;
+    }
+}
+
+#instagramLink:hover {
+    #instagramIcon {
+        color: #AC68C9;
+    }
+}
+
+#telegramLink:hover {
+    #telegramIcon {
+        color: #34ACE1;
+    }
+}
+
+/* footer end */

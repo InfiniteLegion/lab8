@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Assets/css/style.css">
+
+    <title>Вхід</title>
+</head>
+<body>
+    <div class="wrapper container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../Assets/img/logo.png" alt="logo" height="90">
+                </a>
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="./Pages/login.html" class="nav-link text-dark">Вхід</a>
+            </div>
+        </nav>
+        
+        <div class="main">
+            <div class="container w-50 py-5">
+                <h3 class="mb-3">Форма входу</h3>
+                <form action="#">
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form2Example1">Електронна пошта</label>
+                        <input type="email" id="form2Example1" class="form-control" />
+                    </div>
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form2Example2">Пароль</label>
+                        <input type="password" id="form2Example2" class="form-control" />
+                    </div>
+                    <button type="button" class="btn btn-primary btn-block mb-4">Вхід</button>
+                </form>
+            </div>
+        </div>
+
+        <footer class="footer text-light bg-dark">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <p>+38099-123-45-67</p>
+                        <p>info@gmail.com</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <p>&copy; test-page copyright</p>
+                    </div>
+                    <div id="socials" class="col-md-4 col-sm-12">
+                        <div class="d-flex flex-column justify-content-around">
+                            <h4 class="pb-2">Socials</h4>
+                            <div class="pb-3">
+                                <a id="facebookLink" href="https://facebook.com" target="_blank">
+                                    <i id="facebookIcon" class="bi bi-facebook"></i> Facebook
+                                </a>
+                            </div>
+                            <div class="pb-3">
+                                <a id="telegramLink" href="https://web.telegram.org/a/" target="_blank">
+                                    <i id="telegramIcon" class="bi bi-telegram"></i> Telegram
+                                </a>
+                            </div>
+                            <div class="pb-3">
+                                <a id="instagramLink" href="https://instagram.com" target="_blank">
+                                    <i id="instagramIcon" class="bi bi-instagram"></i> Instagram
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
